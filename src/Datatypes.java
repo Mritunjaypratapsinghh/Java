@@ -15,5 +15,38 @@ public class Datatypes {
         System.out.println(pi);
         System.out.println(secondPi);
         System.out.println(myLetter);
+
+        //Implicit Conversion
+
+        //byte can be converted to short,int,long,double,float
+        //short can be converted to int,long,float,double
+        //int can be converted to long, float and double
+        //long can be converted to float and double
+        //char can be converted to int
+
+        byte first = 12;
+        short second = first;
+        int third = second;
+        long fourth = third;
+        float fifth = fourth;
+        double sixth = fifth;
+        char seventh = 'A';
+
+        System.out.println(first+" "+second+" "+third+" "+fourth+" "+fifth+" "+sixth);
+
+        //Explicit conversion
+
+        //data can be lost in this process suppose there is a number of long
+        //which exceeds the range of int, and it is converted from long to int explicitly then data can be lost
+
+        long six = 21456;
+        int newone = (int)six;//Explicit Conversion known as type casting
+
+        System.out.println(six+"-long  "+newone+"-int");
+
+        int age = 150;
+        byte newage = (byte)age;// type casting
+        System.out.println(newage);//-106: due to loss 8 bits got reversed
+
     }
 }
