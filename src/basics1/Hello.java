@@ -1,4 +1,4 @@
-package basic1;
+package basics1;
 
 public class Hello {// this is a block
 
