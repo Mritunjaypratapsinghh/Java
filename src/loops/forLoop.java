@@ -1,6 +1,6 @@
 package loops;
 import java.util.Scanner;
-public class leanLoops {
+public class forLoop {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         //For loop
@@ -30,7 +30,7 @@ public class leanLoops {
         System.out.println("Sum Of "+ n +" Even Numbers Is : "+evenSum);
 
 
-        //Find Number is Prime or Not
+        //Question 4: Find Number is Prime or Not
 
         int count=0;
         for(int i=1;i<=n;i++){
