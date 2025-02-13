@@ -91,7 +91,7 @@ public class ifElse {
             System.out.println("Time to Work");
         }
 
-
+        input.close();
 
     }
 }
