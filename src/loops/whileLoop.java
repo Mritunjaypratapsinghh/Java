@@ -25,7 +25,6 @@ public class whileLoop {
             System.out.println("Look we are again inside the Loop");
             System.out.println("Did you Understood the while loop?");
             hasLearnt=input.nextBoolean();
-
         }
 
 
