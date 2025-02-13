@@ -69,5 +69,29 @@ public class ifElse {
         //Using Nested Ternary Operator
         int result = x > y ? x > z ? x : z : y > z ? y : z; //if x>y true then check x>z if true return x else z if x>y was false then check y>z true then return y else z
         System.out.println("Largest of 3 Numbers is :" + result);
+
+
+
+        int time = input.nextInt();
+        // Indicate Current Time, Office timings are 10 am to 8 pm in 24 (hour format) and you need to find out according to input
+        // that office is open or closed.
+        if(time>=10 && time<=20){ // Here we are using Logical AND Operator
+            System.out.println("Office is Open");
+        }
+        else{
+            System.out.println("Office is Closed");
+        }
+
+
+        //IF time is 12 or 6 in 24 hour format then its time for lunch
+        if(time==12 || time==18){
+            System.out.println("Time for Snacks");
+        }
+        else{
+            System.out.println("Time to Work");
+        }
+
+
+
     }
 }
