@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Scanner;
+
 public class basicsOfArray {
     public static void main(String[] args){
 //        int age[];  // Declaration
@@ -33,6 +35,23 @@ public class basicsOfArray {
         for(String name: names){
             System.out.println("Printing Name Using  For Each Loop "+name);
         }
+
+        //Fill the array by user input
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the size of array:");
+        int n = input.nextInt();
+        int[] nums = new int[n];
+
+        for(int i=0; i<n;i++){
+            System.out.println("Enter the number to fill the array:");
+            nums[i]=input.nextInt();
+        }
+
+        for(int num: nums){
+            System.out.print(" "+ num);
+        }
+
 
 
     }
