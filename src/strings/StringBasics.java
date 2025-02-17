@@ -60,6 +60,7 @@ public class StringBasics {
         System.out.println(name.equals(newName));//equals check for same content but here it outputs false because case is different
         System.out.println(name.equalsIgnoreCase(newName));//equalsIgnoreCase : this ignores the case and check for same content
 
+        input.close();
 
     }
 }
