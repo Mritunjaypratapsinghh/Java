@@ -1,51 +1,101 @@
 package oops;
 
-public class MainClass {//There can be only 1 Public class inside a file
+public class MainClass { // There can be only one public class per file
     public static void main(String[] args) {
-        Dog d1 = new Dog();
-        d1.name = "Tommy";
-        d1.color="black";
+        // Creating Dog objects using constructor
+        Dog d1 = new Dog("Tommy", "Black", 3);
         d1.bark();
 
-        Dog d2 = new Dog();
-        d2.name = "Leo";
+        Dog d2 = new Dog("Leo", "Brown", 2);
         d2.walk();
 
-        Complex num1 = new Complex();
-        num1.a = 3;
-        num1.b = 2;
+        // Creating Complex number objects
+        Complex num1 = new Complex(3, 2);
+        Complex num2 = new Complex(1, 4);
+        Complex sum = num1.add(num2);
+
+        System.out.print("First Complex Number: ");
         num1.print();
 
+        System.out.print("Second Complex Number: ");
+        num2.print();
 
+        System.out.print("Sum of Complex Numbers: ");
+        sum.print();
+
+        // Creating a Cat object
+        Cat c1 = new Cat("Persian");
+        c1.meow();
     }
 }
 
+// Dog class with private fields, constructor, and getter methods
+class Dog {
+    private String name;
+    private String color;
+    private int age;
 
-class Complex{
-    int a,b;
+    // Constructor
+    public Dog(String name, String color, int age) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+    }
 
-    void print(){
-        System.out.println(a+" + "+b+"i");
+    // Getter methods
+    public String getName() {
+        return name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    // Dog behaviors
+    public void walk() {
+        System.out.println(name + " is Walking");
+    }
+
+    public void bark() {
+        System.out.println(name + " is Barking");
     }
 }
 
-class Dog{
-    String name;
-    String color;
-    int age;
+// Complex class with constructor and method for addition
+class Complex {
+    private int a, b;
 
-
-
-    public void walk(){
-        System.out.println(name+" is Walking");
+    // Constructor
+    public Complex(int a, int b) {
+        this.a = a;
+        this.b = b;
     }
 
-    public void bark(){
-        System.out.println(name+ " is Barking");
+    // Method to print complex number
+    void print() {
+        System.out.println(a + " + " + b + "i");
+    }
+
+    // Method to add two complex numbers
+    Complex add(Complex c) {
+        return new Complex(this.a + c.a, this.b + c.b);
     }
 }
 
+// Cat class with constructor and method
+class Cat {
+    private String breed;
 
-class Cat{
+    // Constructor
+    public Cat(String breed) {
+        this.breed = breed;
+    }
 
+    public void meow() {
+        System.out.println("The " + breed + " cat is meowing");
+    }
 }
