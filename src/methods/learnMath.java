@@ -4,7 +4,7 @@ public class learnMath {
     public static void main(String[] args) {
         int a =2;
         int b=5;
-
+        System.out.println(args[0]);
         System.out.println(Math.max(a,b));
         System.out.println(Math.min(a,b));
         System.out.println(Math.sqrt(a));
@@ -25,5 +25,9 @@ public class learnMath {
 
     public static int getRandom(){
         return (int)(Math.random()*100); //Here we are multiplying by 100 so that random number range from 0 to 100
+    }
+
+    public int max(int a,int b){
+        return Math.max(a,b);
     }
 }
