@@ -1,10 +1,8 @@
 package strings;
 
-import methods.learnMath;
-
 import java.util.Scanner;
 
-public class stringBasics {
+public class StringBasics {
     public static void main(String[] args) {
 
         /*

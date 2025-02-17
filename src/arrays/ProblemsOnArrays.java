@@ -1,6 +1,6 @@
 package arrays;
 
-public class problemsOnArrays {
+public class ProblemsOnArrays {
     public static void main(String[] args){
         int[] numbers = {3,10,3,4,1};
         //Find Sum of array

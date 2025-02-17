@@ -1,6 +1,6 @@
 package loops;
 
-public class doWhileLoop {
+public class DoWhileLoop {
     public static void main(String[] args){
         //Do While Loop
         //SYNTAX - do{}while() //do block will execute first always then it will check while loop condition if true then do block will execute again

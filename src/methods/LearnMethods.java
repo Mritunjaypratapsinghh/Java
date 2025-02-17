@@ -1,6 +1,6 @@
 package methods;
 
-public class learnMethods {
+public class LearnMethods {
     public static void main(String[] args){
         System.out.println(args[0]);// this args can be passed in configuration as string array parameters
         for(String arg: args){

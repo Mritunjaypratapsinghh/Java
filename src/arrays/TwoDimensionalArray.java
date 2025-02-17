@@ -1,6 +1,6 @@
 package arrays;
 
-public class twoDimensionalArray {
+public class TwoDimensionalArray {
     public static void main(String[] args){
         int[][] marks = new int[4][3];
 

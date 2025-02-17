@@ -2,7 +2,7 @@ package conditionalStatements;
 
 import java.util.Scanner;
 
-public class ifElse {
+public class IfElse {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Your Age:");//Return type of sout is Void

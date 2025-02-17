@@ -1,6 +1,6 @@
 package loops;
 
-public class labeledBreakAndContinue {
+public class LabeledBreakAndContinue {
     public static void main(String[] args) {
         //Labeled Break
 

@@ -1,6 +1,6 @@
 package loops;
 import java.util.Scanner;
-public class forLoop {
+public class ForLoop {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         //For loop

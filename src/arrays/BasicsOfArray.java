@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class basicsOfArray {
+public class BasicsOfArray {
     public static void main(String[] args){
 //        int age[];  // Declaration
 //        age = new int[5]; //Allocation
