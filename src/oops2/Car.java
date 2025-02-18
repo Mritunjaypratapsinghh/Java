@@ -15,6 +15,11 @@ public class Car extends Vehicle {  // Inheriting from the Vehicle class
         System.out.println(this.model + " Car is Starting, " + this.color + " is the color of this car");
     }
 
+//    void speed(){ this method will cause error because it is a final method: Cannot Override
+//        System.out.println("Car is speeding");
+//    }
+
+
     public static void main(String [] args){
         Car obj = new Car();  // Creating an instance of the Car class
         System.out.println("Parent class Vehicle wheelsCount value: " + obj.wheelsCount);  // Accessing wheelsCount from the parent class
@@ -22,6 +27,8 @@ public class Car extends Vehicle {  // Inheriting from the Vehicle class
         System.out.println("Overriding Vehicle parent class wheelsCount value by object: " + obj.wheelsCount);  // Updated value of wheelsCount
         obj.model = "I10";  // Setting the model of the car
         obj.color = "black";  // Setting the color of the car
-        obj.start();  // Calling the start method of the Car class
+        obj.start();  // Calling the start method of the Car
+        obj.speed();// Called Parent Class Behaviour(Method)
+
     }
 }
