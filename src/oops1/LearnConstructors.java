@@ -29,7 +29,7 @@ class ComplexNumbers {
     int b; // Imaginary part
 
     // Constructor to initialize both real and imaginary parts
-    public ComplexNumbers(int a, int b) {
+    public ComplexNumbers(int a, int b) {//Constructor should have same name as Class
         this.a = a;
         this.b = b;
     }
