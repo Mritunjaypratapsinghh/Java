@@ -1,4 +1,4 @@
-package oops;
+package oops1;
 
 public class MainClass { // There can be only one public class per file
     public static void main(String[] args) {
