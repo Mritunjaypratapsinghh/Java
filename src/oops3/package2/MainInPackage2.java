@@ -7,8 +7,8 @@ public class MainInPackage2 {
         obj.teachingClass = 12; // Public Variable can be accessed outside package from Non subclass too;
 //        obj.id = 919; //Error : Cannot Access Private Variable Outside Package
 //        obj.name = "Outside Package Non Subclass"; //Error: Protected Variable cannot be accessed from outside package Non-Subclass
-//        obj.subject = "math"; //Error : Default Variable : Cannot Accessed from outside package Non-Subclass
-
+//        obj.subject = "math"; //Error : Default Variable : Cannot Access from outside package Non-Subclass
+        int a  =Integer.MAX_VALUE;
     }
 }
 
@@ -19,7 +19,7 @@ class Children extends Teacher{ // Inheriting Teacher class from outside package
         obj.teachingClass = 12;// Public Variable can be accessed from outside package subclass too;
 //        obj.id = 919;//Error: Cannot Access Private Variable from outside package subclass too;
 //        obj.name = "Outside Package SubClass";// Error: protected members are only accessible via inheritance, meaning they must be accessed through this or a subclass instance.
-//    ❌ Direct Access via obj in Children (i.e., obj.name = "Some Value";)
+//    No Direct Access via obj in Children (i.e., obj.name = "Some Value";)
 //
 //    obj is a Teacher reference, not a Children instance.
 //    protected members are only accessible via inheritance, meaning they must be accessed through this or a subclass instance.
