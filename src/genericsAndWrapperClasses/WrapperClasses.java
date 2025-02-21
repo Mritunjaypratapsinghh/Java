@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class WrapperClasses {
     public static void main(String[] args) {
         // Creating Integer objects using different approaches
+//        Integer obj = new Integer(12); //Not a Preffered way
         Integer obj = Integer.valueOf(12); // Preferred way over new Integer()
         Integer obj2 = Integer.valueOf("12"); // Parsing from string
 
