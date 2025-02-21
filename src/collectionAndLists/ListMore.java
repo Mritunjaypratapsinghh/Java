@@ -87,6 +87,7 @@ public class ListMore {
         city.add("Chicago");
         city.add("Houston");
 
+
         System.out.println("City LinkedList: " + city);
 
         // Adding elements at specific positions
