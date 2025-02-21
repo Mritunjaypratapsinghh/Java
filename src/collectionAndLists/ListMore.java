@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Stack;
+import java.util.LinkedList;
 
 public class ListMore {
     public static void main(String[] args) {
@@ -54,5 +55,48 @@ public class ListMore {
 
         // Peeking at the top element without removing it
         System.out.println("Top element in stack: " + vegetables.peek());
+
+        // Using List interface with LinkedList implementation
+        /*
+        Assigning a LinkedList object to a List reference allows flexibility—you can switch between different List implementations
+        (like ArrayList, Vector, etc.) without changing other parts of the code.
+         */
+        List<String> cities = new LinkedList<>();
+
+        // Adding elements
+        cities.add("New York");
+        cities.add("Los Angeles");
+        cities.add("Chicago");
+        cities.add("Houston");
+
+        // Displaying the list
+        System.out.println("Cities List: " + cities);
+
+        // Removing an element
+        cities.remove("Chicago");
+        System.out.println("After removal: " + cities);
+
+        // LinkedList implementation for cities
+        /*
+        When you need LinkedList-specific methods like addFirst(), addLast(), removeFirst(), and removeLast().
+        Java's LinkedList is implemented as a doubly linked list, regardless of whether you use the List interface or LinkedList directly.
+         */
+        LinkedList<String> city = new LinkedList<>();
+        city.add("New York");
+        city.add("Los Angeles");
+        city.add("Chicago");
+        city.add("Houston");
+
+        System.out.println("City LinkedList: " + city);
+
+        // Adding elements at specific positions
+        city.addFirst("San Francisco");
+        city.addLast("Seattle");
+        System.out.println("After adding first and last: " + city);
+
+        // Removing elements
+        city.removeFirst();
+        city.removeLast();
+        System.out.println("After removing first and last: " + city);
     }
 }
