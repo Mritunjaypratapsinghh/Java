@@ -15,7 +15,14 @@ public class FinallyBlockInExceptions {
         }
 
         System.out.println("Bye world");
+        try{
+            getNumberFromArray(a);}
+        catch (Exception e){
+            System.out.println("catched the exception "+ e.getMessage());
+        }
+    }
 
-
+    static int getNumberFromArray(int a[]) throws  ArrayIndexOutOfBoundsException{
+        return a[8];
     }
 }
