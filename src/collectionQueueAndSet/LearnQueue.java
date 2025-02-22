@@ -31,5 +31,7 @@ public class LearnQueue {
 
         // Trying to peek into an empty queue
         System.out.println("Peek after clearing queue: " + queue.peek()); // Returns null if empty
+        System.out.println(queue.poll());// this poll method does not throw exception but if we use remove method it will
+//        System.out.println(queue.remove()); it will throw exception because removing from empty queue
     }
 }
