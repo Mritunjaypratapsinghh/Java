@@ -16,6 +16,7 @@ public class LearnDeque {
         // Removing elements
         System.out.println("Poll (removes first): " + deque.poll());       // Removes first element
         System.out.println("Poll Last (removes last): " + deque.pollLast()); // Removes last element
+
         System.out.println("Deque after polling: " + deque);
 
         // Adding new elements
@@ -26,6 +27,5 @@ public class LearnDeque {
         System.out.println("Peek (first element): " + deque.peek());         // Retrieves first element
         System.out.println("Peek First (first element): " + deque.peekFirst()); // Retrieves first element (same as peek)
         System.out.println("Peek Last (last element): " + deque.peekLast()); // Retrieves last element
-
     }
 }
